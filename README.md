@@ -51,6 +51,71 @@ enable-batch-process=1
 enable-past-frame=1
 display-tracking-id=1
 ```
+
+# Output of 
+
+- yolov7
+
+```bash
+NvMMLiteBlockCreate : Block : BlockType = 279
+** INFO: <bus_callback:180>: Pipeline running
+
+NvMMLiteOpen : Block : BlockType = 4
+===== NVMEDIA: NVENC =====
+NvMMLiteBlockCreate : Block : BlockType = 4
+H264: Profile = 66, Level = 0
+NVMEDIA_ENC: bBlitMode is set to TRUE
+**PERF:  63.33 (62.86)
+**PERF:  62.82 (62.93)
+**PERF:  62.63 (62.88)
+**PERF:  62.94 (62.60)
+**PERF:  62.73 (62.68)
+**PERF:  62.69 (62.73)
+**PERF:  62.48 (62.77)
+**PERF:  62.56 (62.62)
+**PERF:  62.68 (62.66)
+**PERF:  62.70 (62.70)
+**PERF:  62.55 (62.72)
+** INFO: <bus_callback:217>: Received EOS. Exiting ...
+
+Quitting
+[NvMultiObjectTracker] De-initialized
+App run successful
+```
+- yolov7 tiny
+
+```bash
+**PERF:  0.00 (0.00)
+** INFO: <bus_callback:194>: Pipeline ready
+
+Opening in BLOCKING MODE
+NvMMLiteOpen : Block : BlockType = 279
+NVMEDIA: Reading vendor.tegra.display-size : status: 6
+NvMMLiteBlockCreate : Block : BlockType = 279
+** INFO: <bus_callback:180>: Pipeline running
+
+NvMMLiteOpen : Block : BlockType = 4
+===== NVMEDIA: NVENC =====
+NvMMLiteBlockCreate : Block : BlockType = 4
+H264: Profile = 66, Level = 0
+NVMEDIA_ENC: bBlitMode is set to TRUE
+**PERF:  63.38 (62.91)
+**PERF:  62.25 (62.74)
+**PERF:  63.23 (62.41)
+**PERF:  62.79 (62.61)
+**PERF:  63.01 (62.69)
+**PERF:  62.61 (62.74)
+**PERF:  62.63 (62.74)
+**PERF:  62.33 (62.76)
+**PERF:  62.93 (62.67)
+**PERF:  62.73 (62.70)
+**PERF:  62.50 (62.73)
+** INFO: <bus_callback:217>: Received EOS. Exiting ...
+
+Quitting
+[NvMultiObjectTracker] De-initialized
+App run successful
+```
 # DeepStream-Yolo
 
 NVIDIA DeepStream SDK 6.1.1 / 6.1 / 6.0.1 / 6.0 configuration for YOLO models
