@@ -1,3 +1,27 @@
+# Assignment
+
+1. Run YOLOV7, YOLOV7-Tiny on your own video (30s) with Deepstream on Jetson Nano
+2. Save the video to a file and upload it to YouTube/LinkedIn
+   1. submit the link of both yolov7 and yolov7-tiny
+3. Submit the FPS you were able to achieve
+
+
+**to run**
+
+`deepstream-app -c knights_deepstram_cpp_config.txt`
+
+to run full yolov7 change model config file [knights_deepstram_cpp_config.txt](knights_deepstram_cpp_config.txt)
+
+line 94 
+
+- config-file=tiny-config_infer_primary.txt
+to config_infer_primary_yoloV7.txt
+
+*config-file=tiny-config_infer_primary.txt*
+
+follow this to genetrate yolov7 cfg and wts file [YOLOv7 usage](docs/YOLOv7.md)
+
+
 # DeepStream-Yolo
 
 NVIDIA DeepStream SDK 6.1.1 / 6.1 / 6.0.1 / 6.0 configuration for YOLO models
