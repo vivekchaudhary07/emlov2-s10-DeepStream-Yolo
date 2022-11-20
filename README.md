@@ -24,6 +24,33 @@ to config_infer_primary_yoloV7.txt
 follow this to genetrate yolov7 cfg and wts file [YOLOv7 usage](docs/YOLOv7.md)
 
 
+- to skip frames chage interval in [deepstram config file](knights_deepstram_cpp_config.txt) 
+
+```
+[primary-gie]
+enable=1
+interval=6
+```
+
+- add tracker, there are 3 trackers upported by deepstream IOU, NvDCF and DeepSort you can use any
+
+```
+[tracker]
+enable=1
+# For NvDCF and DeepSORT tracker, tracker-width and tracker-height must be a multiple of 32, respectively
+tracker-width=640
+tracker-height=384
+ll-lib-file=/opt/nvidia/deepstream/deepstream-6.0/lib/libnvds_nvmultiobjecttracker.so
+# ll-config-file required to set different tracker types
+# ll-config-file=config_tracker_IOU.yml
+ll-config-file=config_tracker_NvDCF_perf.yml
+# ll-config-file=config_tracker_NvDCF_accuracy.yml
+# ll-config-file=config_tracker_DeepSORT.yml
+gpu-id=0
+enable-batch-process=1
+enable-past-frame=1
+display-tracking-id=1
+```
 # DeepStream-Yolo
 
 NVIDIA DeepStream SDK 6.1.1 / 6.1 / 6.0.1 / 6.0 configuration for YOLO models
