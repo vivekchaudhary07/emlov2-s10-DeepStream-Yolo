@@ -8,6 +8,8 @@
 
 **to run**
 
+[input video](./input.mp4)
+
 `deepstream-app -c knights_deepstram_cpp_config.txt`
 
 to run full yolov7 change model config file [knights_deepstram_cpp_config.txt](knights_deepstram_cpp_config.txt)
@@ -17,7 +19,7 @@ line 94
 - config-file=tiny-config_infer_primary.txt
 to config_infer_primary_yoloV7.txt
 
-*config-file=tiny-config_infer_primary.txt*
+*config-file=tiny-config_infer_primary_yoloV7.txt*
 
 follow this to genetrate yolov7 cfg and wts file [YOLOv7 usage](docs/YOLOv7.md)
 
