@@ -55,6 +55,7 @@ display-tracking-id=1
 # Output of 
 
 - yolov7
+Output Video: [YouTube link](https://www.youtube.com/watch?v=HPW43DSpT0o&ab_channel=NehaMittal)
 
 ```bash
 NvMMLiteBlockCreate : Block : BlockType = 279
